@@ -9,7 +9,7 @@ function getAiClient() {
   return new GoogleGenAI({ apiKey });
 }
 
-const MODEL = 'gemini-3-flash-preview';
+const MODEL = 'gemini-2.0-flash';
 
 export async function fetchHomeContents(lang: Language) {
   const ai = getAiClient();
@@ -41,7 +41,7 @@ export async function fetchHomeContents(lang: Language) {
 export async function generateCareerReport(profile: UserProfile, lang: Language) {
   const ai = getAiClient();
   const response = await ai.models.generateContent({
-    model: 'gemini-3.1-pro-preview', // Using pro for complex reasoning
+    model: 'gemini-2.0-flash',
     contents: `You are Rahnuma, a friendly AI career counselor specializing in Pakistani students. 
     A student has provided the following profile: ${JSON.stringify(profile)}.
     Respond in ${lang}.

@@ -107,8 +107,8 @@ export default function App() {
                 <div className="font-bold text-gray-800 dark:text-gray-200 text-sm flex items-center justify-between">
                   Shunaid Ahmed
                   <div className="flex gap-2">
-                    <a href="https://github.com/shunaid" target="_blank" rel="noreferrer" className="text-gray-400 hover:text-gray-900 dark:hover:text-white transition-colors"><Github className="w-4 h-4" /></a>
-                    <a href="https://linkedin.com/in/shunaid" target="_blank" rel="noreferrer" className="text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors"><Linkedin className="w-4 h-4" /></a>
+                    <a href="https://github.com/shunaidahmed" target="_blank" rel="noreferrer" className="text-gray-400 hover:text-gray-900 dark:hover:text-white transition-colors"><Github className="w-4 h-4" /></a>
+                    <a href="https://www.linkedin.com/in/shunaidahmed/" target="_blank" rel="noreferrer" className="text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors"><Linkedin className="w-4 h-4" /></a>
                   </div>
                 </div>
              </div>

@@ -1,0 +1,10 @@
+steps:
+- name: 'gcr.io/cloud-builders/docker'
+  args: [
+    'build',
+    '-t', '$_REGION-docker.pkg.dev/$PROJECT_ID/rahnuma/ai-counselor:latest',
+    '--build-arg', 'NEXT_PUBLIC_GEMINI_API_KEY=$_NEXT_PUBLIC_GEMINI_API_KEY',
+    '.'
+  ]
+images:
+- '$_REGION-docker.pkg.dev/$PROJECT_ID/rahnuma/ai-counselor:latest'
